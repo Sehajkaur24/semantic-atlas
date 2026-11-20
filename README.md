@@ -1,27 +1,14 @@
-# 🧭 Semantic Atlas
-### An Interactive Platform for Semantic Analysis and Meaning Preservation
-
-<p align="center">
-  <img src="docs/screenshots/01-home.png" alt="Semantic Atlas Home Page" width="100%">
-</p>
-
-<p align="center">
-  ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
-  ![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red?logo=streamlit)
-  ![NLP](https://img.shields.io/badge/Domain-NLP-green)
-  ![Machine Learning](https://img.shields.io/badge/ML-Scikit--learn-orange)
-</p>
-
-## 📌 Overview
+#  Semantic Atlas
 
 **Semantic Atlas** is an interactive NLP-based platform that transforms text into high-dimensional embeddings to explore semantic relationships, similarity, clustering, and meaning preservation.
 
 It provides tools to analyze how meaning changes across translation and summarization operations through machine learning, mathematical analysis, and interactive visualizations.
 
-**Project Type:** B.Tech Major Project  
-**Institution:** Amity School of Engineering and Technology, Amity University Punjab.
+<p align="center">
+  <img src="docs/screenshots/01-home.png.png" alt="Semantic Atlas Home Page" width="100%">
+</p>
 
-## 🚀 Key Features
+##  Key Features
 
 The application consists of 11 interactive modules:
 
@@ -37,50 +24,8 @@ The application consists of 11 interactive modules:
 - **Insights:** Zero-shot tagging and coverage gap analysis.
 - **Export:** Download embeddings, clusters, JSON data, and HTML reports.
 
-## 🧪 Original Research Contributions
 
-### 1. Semantic Robustness Score
-
-Measures semantic preservation by translating text into another language and back, then comparing the original and reconstructed embeddings using cosine similarity.
-
-\[
-SRS = 100 \times \operatorname{mean}(\text{Cosine Similarity})
-\]
-
-Results can be compared across texts, languages, and embedding models.
-
-### 2. Functorial Commutativity Check
-
-Evaluates whether changing the order of translation and summarization produces semantically similar results.
-
-- **Path A:** Translate → Summarize → Translate Back
-- **Path B:** Summarize → Translate → Translate Back
-
-The final outputs are compared using cosine similarity.
-
-### 3. Coverage Gap Analysis
-
-Identifies underrepresented regions in the embedding space to highlight potential gaps in a text dataset.
-
-## 🏗️ System Architecture
-
-```mermaid
-flowchart TD
-    A[Text Input / TXT / CSV] --> B[Embedding Layer]
-    B --> C[Sentence Transformers]
-    B --> D[TF-IDF + SVD]
-    C --> E[Semantic Analysis Engine]
-    D --> E
-    E --> F[Similarity & Clustering]
-    E --> G[Search & Visualization]
-    E --> H[Coverage Analysis]
-    I[Translation Layer] --> J[Research Modules]
-    K[Claude API - Optional] --> J
-    E --> J
-    J --> L[Streamlit Dashboard]
-```
-
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Category | Technologies |
 |---|---|
@@ -96,7 +41,7 @@ flowchart TD
 | Translation | deep-translator |
 | LLM Integration | Anthropic Claude API |
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 semantic-atlas/
@@ -117,7 +62,7 @@ semantic-atlas/
     └── paper.pdf
 ```
 
-## 💻 Installation & Setup
+##  Installation & Setup
 
 **1. Clone the repository**
 
@@ -162,21 +107,21 @@ Open `http://localhost:8501` in your browser.
 
 **Note:** The first run downloads the selected embedding model. Translation and optional AI-powered features require internet connectivity.
 
-## 🖼️ Screenshots
+##  Screenshots
 
 ### Home Page
-![Home](docs/screenshots/01-home.png)
+![Home Page](docs/screenshots/01-home.png.png)
 
 ### Overview Dashboard
-![Overview](docs/screenshots/02-overview.png)
+![Overview Dashboard](docs/screenshots/02-overview.png.png)
 
 ### Semantic Embedding Space
-![Embedding Space](docs/screenshots/04-embedding-space.png)
+![Embedding Space](docs/screenshots/04-embedding-space.png.png)
 
 ### Semantic Robustness Analysis
-![Robustness](docs/screenshots/08-robustness.png)
+![Robustness Analysis](docs/screenshots/08-robustness.png.png)
 
-## 🔮 Future Scope
+##  Future Scope
 
 - Standardized multilingual evaluation benchmarks.
 - Additional semantic preservation metrics.
@@ -184,19 +129,8 @@ Open `http://localhost:8501` in your browser.
 - Improved semantic coverage detection.
 - Evaluation of additional multilingual embedding models.
 
-## 👥 Authors
+##  Author
 
 - **Sehaj Kaur** – Amity School of Engineering and Technology
-- **Mansi** – Amity School of Engineering and Technology
 
-**Project Supervisor:** Dr. Vishwanath Bijalwan
 
----
-
-<p align="center">
-  <strong>Semantic Atlas — Making the Hidden Structure of Meaning Visible.</strong>
-</p>
-
-<p align="center">
-  Developed with Python, NLP, Machine Learning, and Streamlit.
-</p>
