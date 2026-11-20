@@ -1,0 +1,17 @@
+streamlit>=1.38
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+plotly>=5.22
+
+# Optional but recommended — real neural embeddings (higher quality than TF-IDF fallback)
+sentence-transformers>=3.0
+
+# Optional — better 2D/3D layouts than PCA/t-SNE for larger text sets
+umap-learn>=0.5
+
+# Optional — enables AI-generated cluster insights (requires your own Anthropic API key)
+anthropic>=0.40
+
+# Optional — enables the Semantic Robustness Score (free round-trip translation, no API key)
+deep-translator>=1.11
